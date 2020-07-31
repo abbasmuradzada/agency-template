@@ -3,6 +3,156 @@
 @import "./common";
 
 
+
+#objectives {
+    width: 100%;
+    background-color: #F7FAFD;
+    margin: 0 auto;
+    padding: 121px 0;
+
+    >.container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1140px;
+
+        >.container-imgs {
+            height: 540px;
+            width: calc((100% - 128px)*0.55);
+            display: flex;
+            justify-content: space-between;
+
+            >.left-imgs {
+                width: calc((100% - 29px)*0.5);
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                >.top-img {
+                    height: calc((100% - 30px)*0.63);
+                    width: 100%;
+                    background-color: #EDF3FF;
+                }
+
+                >.bottom-img {
+                    height: calc((100% - 30px)*0.37);
+                    width: 100%;
+                    background-color: #EDF3FF;
+                }
+            }
+
+            >.right-imgs {
+                width: calc((100% - 29px)*0.5);
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                >.top-img {
+                    height: calc((100% - 30px)*0.37);
+                    width: 100%;
+                    background-color: #EDF3FF;
+                }
+
+                >.bottom-img {
+                    height: calc((100% - 30px)*0.63);
+                    width: 100%;
+                    background-color: #EDF3FF;
+                }
+            }
+        }
+
+        >.container-descr {
+            height: 438px;
+            width: calc((100% - 128px)*0.45);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            >.info-btn {
+                width: 130px;
+                box-sizing: border-box;
+                background-color: #E8FAF6;
+                color: #00C9A7;
+                font-size: 11px;
+                line-height: 15px;
+                font-weight: 400;
+                padding: 9px 28px;
+                text-decoration: none;
+                border-radius: 16px;
+                text-align: center;
+            }
+
+            >.title {
+                >h1 {
+                    @include font-style(32px, 400, 42px, #1E2022);
+                }
+
+                >p {
+                    @include font-style(17px, 400, 27px, #77838F);
+                }
+            }
+
+            >.benefits {
+                display: flex;
+                justify-content: space-between;
+                >.special-button {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    >div {
+                        display: flex;
+                        justify-content: space-between;
+                        >.shape {
+                            display: inline-block;
+                            width: 30px;
+                            height: 30px;
+                            background-color: #EDF3FF;
+                            border-radius: 50%;
+                            box-sizing: border-box;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            margin-right: 18px;
+                        }
+
+                        >.shape::after {
+                            content: "";
+                            display: inline-block;
+                            width: 3px;
+                            height: 6px;
+                            border: 1px solid #0F70EB;
+                            transform: translateX(-1px);
+                        }
+
+                        >span {
+                            @include font-style(17px, 400, 27px, #77838F);
+                        }
+                        >span:first-child{
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+            }
+
+            >.start-btn {
+                width: 150px;
+                box-sizing: border-box;
+                background-color: #0F70EB;
+                color: white;
+                font-size: 15px;
+                line-height: 20px;
+                font-weight: 600;
+                padding: 15px 30px;
+                text-decoration: none;
+                border-radius: 4px;
+                text-align: center;
+            }
+        }
+    }
+}
+
 footer {
     margin-top: 120px;
     padding-top: 60px;
