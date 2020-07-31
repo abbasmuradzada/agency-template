@@ -3,6 +3,7 @@
 @import "./common";
 
 
+
 #objectives {
     width: 100%;
     background-color: #F7FAFD;
@@ -148,6 +149,44 @@
                 border-radius: 4px;
                 text-align: center;
             }
+        }
+    }
+}
+
+footer {
+    margin-top: 120px;
+    padding-top: 60px;
+
+    > #content {
+        float: left;
+
+        > p {
+            @include font-style(14px,normal,27px,#77838F);
+            font-size: 14px;
+            width: 323px;
+            height: 81px;
+            display: inline-block;
+            line-height: 27px;
+        }
+    }
+
+    #helpful-links {
+        float: left;
+        margin-left: 127px;
+    }
+
+    #services {
+        float: left;
+        margin-left: 44px;
+    }
+
+    #contact-us {
+        float: left;
+        margin-left: 50px;
+
+        > span {
+            display: block;
+            margin-bottom: 13px;
         }
     }
 }

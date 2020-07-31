@@ -1,0 +1,90 @@
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+
+.desc-f-style {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 27px;
+  color: #77838F;
+}
+
+.section-head-f-style {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 42px;
+  color: #1E2022;
+}
+
+.blue-button {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #0F70EB;
+  border-radius: 4px;
+  padding: 15px 40px;
+  border: none;
+}
+
+.light-blue-button {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  color: #0F70EB;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #EDF3FF;
+  border-radius: 4px;
+  padding: 15px 40px;
+  border: none;
+}
+
+footer {
+  margin-top: 120px;
+  padding-top: 60px;
+}
+
+footer > #content {
+  float: left;
+}
+
+footer > #content > p {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 27px;
+  color: #77838F;
+  font-size: 14px;
+  width: 323px;
+  height: 81px;
+  display: inline-block;
+  line-height: 27px;
+}
+
+footer #helpful-links {
+  float: left;
+  margin-left: 127px;
+}
+
+footer #services {
+  float: left;
+  margin-left: 44px;
+}
+
+footer #contact-us {
+  float: left;
+  margin-left: 50px;
+}
+
+footer #contact-us > span {
+  display: block;
+  margin-bottom: 13px;
+}
+/*# sourceMappingURL=style.css.map */
