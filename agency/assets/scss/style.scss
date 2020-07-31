@@ -1,0 +1,154 @@
+@import "./variables";
+@import "./mixin";
+@import "./common";
+
+
+header{
+    width: 100%;
+    >nav{
+        background-color: white;
+        top: 0;
+        z-index: 2;
+        width: 100%;
+        position: fixed;
+        box-shadow: 0px 2px 40px rgba($color: #000000, $alpha: .5);
+        >.container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 19px 0;
+            >ul{
+                display: flex;
+                align-items: center;
+                >li{
+                    @include font-style(14px,400,22px,#77838F);
+                    text-transform: capitalize;
+                    margin-left: 30px;
+                }
+            }
+        }
+    }#header-content{
+        margin-top: 87px;
+        z-index: 1;
+        background-image: url(../images/Image.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding: 250px 0px;
+        #header-details{
+            width: 500px;
+            >h1{
+                @include font-style(38px,400,48px,#1E2022);
+            }>p{
+                margin-bottom: 38px;
+            }#header-button-section{
+                display: flex;
+                >button{
+                    margin-right: 30px;
+                }
+            }
+        }      
+    }
+}
+
+#services{
+    padding: 100px 0px;
+    display: flex;
+    justify-content: space-between;
+    .service-cart{
+        width: calc((100% - 60px)/3);
+        text-align: center;
+        >img{
+            margin-bottom: 23px;
+        }>h3{
+            @include font-style(18px,400,26px,#1E2022);
+            margin-bottom: 15px;
+        }>p{
+            margin-bottom: 38px;
+        }
+    }
+}
+
+#contact{
+    width: 100%;
+    text-align: center;
+    padding: 120px 0px;
+    background: linear-gradient(90deg, rgba(1,115,236,1) 0%, rgba(116,63,229,1) 50%);
+    #more-question{
+        border: none;
+        border-radius: 16px;
+        background-color: rgba($color: #000000, $alpha: .15);
+        padding: 9px 22px;
+        @include font-style(11px,400,15px,white);
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        margin-bottom: 29px;
+    }>h1{
+        @include font-style(55px,400,70px,white);
+        margin-bottom: 20px;
+    }#get-in-touch{
+        @include font-style(14px,600,19px,white);
+        text-decoration: none;
+        text-transform: capitalize;
+        background-color: #00C9A7;
+        border-radius: 4px;
+        padding: 15px 40px;
+        border: none;
+    }
+}
+
+#pricing{
+    text-align: center;
+    padding: 120px 0px;
+    #pricing-button{
+        border: none;
+        border-radius: 16px;
+        background-color: #E8FAF6;
+        padding: 9px 22px;
+        @include font-style(11px,400,15px,#00C9A7);
+        letter-spacing: 0.07em;
+        text-transform: uppercase;
+        margin-bottom: 29px;
+        margin-bottom: 25px;
+    }>p{
+        margin-bottom: 38px;
+    }>#pricing-list{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        >.pricing-cart{
+            width: calc((100% - 60px)/3);
+            padding: 25px;
+            box-sizing: border-box;
+            text-align: center;
+            border-radius: 4px;
+            box-shadow: 0px 5px 20px rgba($color: #000000, $alpha: .5);
+            >h5{
+                @include font-style(16px,600,24px,#0F70EB);
+                text-transform: uppercase;
+                margin-bottom: 50px;
+            }>h1{
+                @include font-style(60px,400,75px,#1E2022);
+                margin-bottom: 20px;
+            }>p{
+                margin-bottom: 38px;
+            }#select-button{
+                @include font-style(15px,600,20px,#0F70EB);
+                width: 100%;
+                border: none;
+                padding: 15px 32px;
+                box-sizing: border-box;
+                background-color: #EDF3FF;
+                border-radius: 5px;
+                text-transform: capitalize;
+                text-align: left;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
